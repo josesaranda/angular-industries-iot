@@ -67,10 +67,10 @@ Create a component which will be able to:
 [x] create unit tests for this component
 
 [x] Unique identifier that is increased automatically (required) o Device name (required)  
-[x] Warehouse addition time (required)
-[x] Number of devices (required, min: 1, max: 100)
-[x] Fee of the device (required, min: 0)
-[x] Linked industry (required, select from list of industries created)
+[x] Warehouse addition time (required)  
+[x] Number of devices (required, min: 1, max: 100)  
+[x] Fee of the device (required, min: 0)  
+[x] Linked industry (required, select from list of industries created)  
 
 Addionataly:
 
