@@ -1,0 +1,14 @@
+<mat-sidenav-container class="h-100vh">
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar>
+      <span>Industries & IoT</span>
+    </mat-toolbar>
+    <nav>
+      <a mat-list-item routerLink="/industries">Industries</a>
+      <a mat-list-item routerLink="/iots">IoTs</a>
+    </nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

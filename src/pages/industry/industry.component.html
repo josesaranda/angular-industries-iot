@@ -1,0 +1,30 @@
+<mat-toolbar>
+  <button mat-icon-button [routerLink]="['/industries']">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span class="ml-4">Industry</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+
+<div class="mat-elevation-z8 margin padding">
+  <form [formGroup]="formGroup" (submit)="onClickSubmit()">
+    <mat-form-field style="width: 100%">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        formControlName="name"
+        type="text"
+        placeholder="Name"
+        uppercase
+      />
+      <mat-error *ngIf="formGroup.controls['name'].hasError('required')"
+        >Por favor, introduce un nombre</mat-error
+      >
+    </mat-form-field>
+    <div class="text-align-right">
+      <button mat-flat-button color="primary" [disabled]="formGroup.invalid">
+        Save
+      </button>
+    </div>
+  </form>
+</div>

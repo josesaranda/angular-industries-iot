@@ -1,0 +1,10 @@
+<div class="padding">
+  <h1>Info</h1>
+  <p>You will delete {{ name }}</p>
+  <div mat-dialog-actions class="text-align-right">
+    <button mat-button (click)="close()">Cancel</button>
+    <button class="ml-4" mat-flat-button color="accent" (click)="close(true)">
+      Delete
+    </button>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+<mat-toolbar>
+  <button mat-icon-button [routerLink]="['/iots']">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span class="ml-4">IoT</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+
+<div class="mat-elevation-z8 margin padding">
+  <form [formGroup]="formGroup" (submit)="onClickSubmit()">
+    <mat-form-field style="width: 100%">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        formControlName="name"
+        type="text"
+        placeholder="Name"
+        required
+      />
+      <mat-error *ngIf="formGroup.controls['name'].hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field style="width: 100%">
+      <mat-label>Industry</mat-label>
+      <select matNativeControl required formControlName="industryId">
+        <option
+          *ngFor="let industry of industries$ | async"
+          [ngValue]="industry.id"
+        >
+          {{ industry.name }}
+        </option>
+      </select>
+      <mat-error *ngIf="formGroup.controls['industryId'].hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field style="width: 100%">
+      <mat-label>Warehouse Addition Time</mat-label>
+      <input
+        matInput
+        formControlName="warehouseAdditionTime"
+        type="text"
+        placeholder="Warehouse Addition Time"
+        required
+      />
+      <mat-error
+        *ngIf="formGroup.controls['warehouseAdditionTime'].hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field style="width: 100%">
+      <mat-label>Num of devices</mat-label>
+      <input
+        matInput
+        formControlName="numOfDevices"
+        type="number"
+        min="1"
+        max="100"
+        placeholder="Num of devices"
+        required
+      />
+      <mat-error *ngIf="formGroup.controls['numOfDevices'].hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field style="width: 100%">
+      <mat-label>Fee</mat-label>
+      <input
+        matInput
+        formControlName="fee"
+        type="number"
+        min="0"
+        placeholder="Fee"
+        required
+      />
+      <mat-error *ngIf="formGroup.controls['fee'].hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <div class="text-align-right">
+      <button mat-flat-button color="primary" [disabled]="formGroup.invalid">
+        Save
+      </button>
+    </div>
+  </form>
+</div>

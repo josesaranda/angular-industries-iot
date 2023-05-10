@@ -1,0 +1,46 @@
+{
+  "industries": [
+    {
+      "name": "Industry 1",
+      "id": 1
+    },
+    {
+      "name": "Industry 2",
+      "id": 2
+    },
+    {
+      "name": "Industry 3",
+      "id": 3
+    },
+    {
+      "name": "Industry 4",
+      "id": 4
+    },
+    {
+      "name": "Industry 5",
+      "id": 5
+    },
+    {
+      "name": "Industry 6",
+      "id": 6
+    }
+  ],
+  "iots": [
+    {
+      "name": "IoT 1",
+      "warehouseAdditionTime": "10/10/2022",
+      "numOfDevices": 1,
+      "fee": 0.03,
+      "industryId": 1,
+      "id": 1
+    },
+    {
+      "name": "IoT 2",
+      "warehouseAdditionTime": "11/10/2022",
+      "numOfDevices": 2,
+      "fee": 1,
+      "industryId": 2,
+      "id": 2
+    }
+  ]
+}
