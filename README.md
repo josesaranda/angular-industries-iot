@@ -57,20 +57,22 @@ Create a component which will be able to:
 [x] show an empty form when pressing "Add"  
 [x] show confirmation dialog when user clicks on "Delete"  
 [x] delete Industry when user clicks on "Delete" inside the dialog  
-[x] create unit tests for this component
+[x] create unit tests for this component  
+[x] create integration tests for this component
 
 [x] show a paginated list of IoTs where will appear two buttons with the text "Edit" and "Delete"  
 [x] show an input for searching IoTs by the given text and Industry  
 [x] show an empty form when pressing "Add"  
 [x] show confirmation dialog when user clicks on "Delete"  
 [x] delete Industry when user clicks on "Delete" inside the dialog  
-[x] create unit tests for this component
+[x] create unit tests for this component  
+[x] create integration tests for this component
 
 [x] Unique identifier that is increased automatically (required) o Device name (required)  
 [x] Warehouse addition time (required)  
 [x] Number of devices (required, min: 1, max: 100)  
 [x] Fee of the device (required, min: 0)  
-[x] Linked industry (required, select from list of industries created)  
+[x] Linked industry (required, select from list of industries created)
 
 Addionataly:
 
@@ -84,5 +86,5 @@ Addionataly:
 
 Extra:
 
-[x] add pipeline and run build and test procces
+[x] add pipeline and run build and test procces  
 [x] dockerize project
