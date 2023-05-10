@@ -87,5 +87,5 @@ Addionataly:
 
 Extra:
 
-[x] add pipeline and run build and test procces  
+[x] add pipeline and run build and test process  
 [x] dockerize project
